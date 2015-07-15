@@ -939,6 +939,79 @@ var commands = exports.commands = {
 		this.targetUser.avatar = '#cpgtan';
 		room.add("" + user.name + " applied cpgtan to affected area of " + this.targetUser.name);
 	},
+	
+	
+	a: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = 'http://i.imgur.com/74QxxCk.png';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	b: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#shockandawe';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	c: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#okuu';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	d: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#level51';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	e: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#awu';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	
+	f: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#politoed';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+	
+	g: function (target, room, user) {
+		if (room.id !== 'thirty') return this.sendReply("alright");
+		if (!this.can('modchat', null, room)) return;
+		target = this.splitTarget(target);
+		if (!this.targetUser) return this.sendReply("User not found");
+		if (!room.users[this.targetUser.userid]) return this.sendReply("ok");
+		this.targetUser.avatar = '#rekeri2';
+		room.add("" + user.name + " applied memes to affected area of " + this.targetUser.name);
+	},
+
 
 	introduction: 'intro',
 	intro: function (target, room, user) {
